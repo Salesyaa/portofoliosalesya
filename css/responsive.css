@@ -1,20 +1,65 @@
+
 /* ========================================
-   PORTOFOLIO SALESYA — Responsive CSS
-   📱 Mobile-first media queries
+   PORTOFOLIO SALESYA — RESPONSIVE FIX
+   HP fit layar, tanpa geser kanan-kiri
+   Desktop tetap seperti semula
    ======================================== */
 
-/* ---- Tablet: ≤ 900px ---- */
+/* Cegah halaman melebar ke kanan-kiri */
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+iframe,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+/* ---- TABLET & MOBILE ---- */
 @media (max-width: 900px) {
 
-  /* Navbar */
-  .hamburger { display: flex; }
+  /* Pastikan semua section mengikuti layar */
+  .section,
+  section,
+  main,
+  header,
+  footer {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /* NAVBAR */
+  .hamburger {
+    display: flex;
+  }
 
   .nav-links {
     position: absolute;
     top: var(--navbar-h);
     left: 0;
     width: 100%;
-    background: rgba(255,240,245,0.97);
+    max-width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 240, 245, 0.97);
     backdrop-filter: blur(20px);
     flex-direction: column;
     gap: 0;
@@ -27,142 +72,395 @@
 
   .nav-links.open {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    pointer-events: all;
+    pointer-events: auto;
     animation: slideDown 0.3s ease;
   }
 
   .nav-links a {
     display: block;
     padding: 12px 24px;
-    border-radius: 0;
     border-bottom: 1px solid var(--pink-100);
     font-size: 1rem;
   }
 
-  .nav-links a:last-child { border-bottom: none; }
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
 
-  /* Hero */
+  /* HERO */
   .hero-content {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    gap: 36px;
+    gap: 28px;
     padding: 20px 0;
-  }
-
-  .hero-text { order: 2; }
-  .hero-photo-wrapper { order: 1; }
-
-  .hero-photo-ring { width: 200px; height: 200px; }
-
-  .hero-badge-1 { right: -10px; }
-  .hero-badge-2 { left: -10px; }
-
-  .hero-desc { margin: 0 auto 32px; }
-
-  .hero-cta { justify-content: center; }
-
-  /* About */
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .about-photo-col { max-width: 400px; margin: 0 auto; width: 100%; }
-
-  .about-info-grid { grid-template-columns: 1fr; }
-
-  /* Timeline */
-  .timeline::before {
-    left: 24px;
-  }
-
-  .timeline-item {
     width: 100%;
-    left: 0 !important;
-    text-align: left !important;
-    padding-left: 70px;
-    padding-right: 0;
+    min-width: 0;
   }
 
+  .hero-photo-wrapper {
+    order: 1;
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+
+  .hero-photo-ring {
+    width: 200px;
+    height: 200px;
+    max-width: 65vw;
+    max-height: 65vw;
+    flex-shrink: 0;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ABOUT ME */
+  .about-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch;
+    gap: 28px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-photo-col {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-photo-frame {
+    width: 100%;
+    max-width: 360px;
+    min-width: 0;
+    margin: 0 auto;
+  }
+
+  .about-photo-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .about-text {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    text-align: left;
+  }
+
+  .about-info-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* EDUCATION */
+  .timeline {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    position: relative;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 0 24px;
+    padding: 0 0 0 28px;
+    text-align: left !important;
+  }
+
+  .timeline-item .timeline-dot,
   .timeline-item:nth-child(odd) .timeline-dot,
   .timeline-item:nth-child(even) .timeline-dot {
     left: 0 !important;
     right: auto !important;
   }
 
-  /* Experience cards */
-  .exp-card {
-    grid-template-columns: 1fr;
-    direction: ltr !important;
+  .timeline-item > *,
+  .timeline-item .timeline-card {
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 
+  /* EXPERIENCE */
+  .exp-card,
   .exp-card:nth-child(even) {
-    direction: ltr;
+    display: flex !important;
+    flex-direction: column !important;
+    direction: ltr !important;
+    align-items: stretch;
+    gap: 22px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .exp-card > * {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .exp-carousel {
+    order: 1;
+    width: 100%;
+    min-width: 0;
     min-height: 220px;
   }
 
-  /* Projects */
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .exp-content,
+  .exp-info,
+  .exp-text {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    text-align: left;
   }
 
-  /* Contact */
+  /* PROJECT — CENTER DAN FIT LAYAR */
+  .projects-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 24px;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+
+  .projects-grid > *,
+  .project-card {
+    float: none !important;
+    position: relative;
+    left: auto !important;
+    right: auto !important;
+    width: calc(100% - 28px) !important;
+    max-width: 480px !important;
+    min-width: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+    overflow-wrap: anywhere;
+  }
+
+  /* CONTACT — SEND MESSAGE DAHULU */
   .contact-layout {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch;
+    gap: 28px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+  }
+
+  .contact-info-wrap,
+  .contact-form-wrap {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+
+  .contact-form-wrap {
+    order: 1;
+  }
+
+  .contact-info-wrap {
+    order: 2;
+  }
+
+  .contact-form-wrap input,
+  .contact-form-wrap textarea,
+  .contact-form-wrap button {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /* Sosial media dua kolom jika memakai class ini */
+  .contact-info-wrap .social-links,
+  .contact-info-wrap .social-grid,
+  .contact-info-wrap .social-cards {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .contact-info-wrap .social-links > *,
+  .contact-info-wrap .social-grid > *,
+  .contact-info-wrap .social-cards > * {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /* Cegah teks panjang melebar */
+  h1, h2, h3, p, a, li {
+    overflow-wrap: anywhere;
   }
 }
 
-/* ---- Mobile: ≤ 600px ---- */
+
+/* ---- MOBILE: MAKSIMAL 600PX ---- */
 @media (max-width: 600px) {
 
   :root {
     --navbar-h: 64px;
   }
 
-  .section { padding: 64px 0; }
-
-  /* Hero */
-  .hero-photo-ring { width: 170px; height: 170px; }
-
-  .hero-badge { font-size: 0.75rem; padding: 4px 10px; }
-  .hero-badge-1 { top: 0; right: 0; }
-  .hero-badge-2 { bottom: 0; left: 0; }
-
-  .btn { padding: 11px 22px; font-size: 0.88rem; }
-
-  /* Section titles */
-  .section-title { margin-bottom: 40px; }
-
-  /* Cert grid */
-  .cert-grid {
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  .section {
+    padding: 56px 0;
   }
 
-  /* Project play button */
-  .project-play-btn { width: 48px; height: 48px; font-size: 1.1rem; }
-
-  /* Carousel */
-  .exp-carousel { min-height: 200px; }
-
-  /* Scroll top */
-  .scroll-top {
-    bottom: 20px;
-    right: 20px;
-    width: 42px;
-    height: 42px;
+  .hero-content {
+    gap: 24px;
   }
 
-  /* Footer */
-  footer { padding: 30px 0 24px; }
+  .hero-photo-ring {
+    width: 170px;
+    height: 170px;
+  }
+
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+
+  .hero-badge-1 {
+    top: 0;
+    right: 0;
+  }
+
+  .hero-badge-2 {
+    bottom: 0;
+    left: 0;
+  }
+
+  .hero-cta {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 11px 18px;
+    font-size: 0.88rem;
+  }
+
+  .about-grid {
+    gap: 24px;
+  }
+
+  .about-photo-frame {
+    max-width: 300px;
+  }
+
+  .timeline-item {
+    margin-bottom: 20px;
+  }
+
+  .exp-card {
+    gap: 18px;
+  }
+
+  .exp-carousel {
+    min-height: 200px;
+  }
+
+  .projects-grid > *,
+  .project-card {
+    width: calc(100% - 28px) !important;
+    max-width: 480px !important;
+  }
+
+  .contact-layout {
+    gap: 24px;
+  }
+
+  footer {
+    padding: 30px 0 24px;
+  }
+
+  /* Sertifikat tidak diubah */
 }
 
-/* ---- Very small: ≤ 380px ---- */
+
+/* ---- HP SANGAT KECIL: MAKSIMAL 380PX ---- */
 @media (max-width: 380px) {
-  .hero-photo-ring { width: 145px; height: 145px; }
-  .hero-cta { flex-direction: column; align-items: center; }
-  .about-tag { left: 0; }
+
+  .hero-photo-ring {
+    width: 145px;
+    height: 145px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-tag {
+    left: 0;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  /* Sertifikat tetap memakai CSS asli */
 }
