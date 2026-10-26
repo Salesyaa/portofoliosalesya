@@ -1,0 +1,110 @@
+/* ========================================
+   PORTOFOLIO SALESYA — Animations
+   🌸 All Keyframes & Transitions
+   ======================================== */
+
+/* ---------- Float ---------- */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
+
+/* ---------- Bounce ---------- */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-5px); }
+}
+
+/* ---------- Ring Spin (Hero photo border) ---------- */
+@keyframes ring-spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ---------- Blink Cursor (typewriter) ---------- */
+@keyframes blink-cursor {
+  0%, 100% { border-color: transparent; }
+  50%       { border-color: var(--pink-400); }
+}
+
+/* ---------- Heartbeat (footer) ---------- */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%       { transform: scale(1.3); }
+  28%       { transform: scale(1); }
+  42%       { transform: scale(1.3); }
+  70%       { transform: scale(1); }
+}
+
+/* ---------- Sparkle Particle ---------- */
+@keyframes sparkle-fade {
+  0%   { opacity: 0; transform: scale(0) rotate(0deg); }
+  50%  { opacity: 1; transform: scale(1) rotate(180deg); }
+  100% { opacity: 0; transform: scale(0) rotate(360deg); }
+}
+
+/* ---------- Shimmer (loading bar) ---------- */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ---------- Slide Down (mobile menu) ---------- */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Pop In ---------- */
+@keyframes popIn {
+  0%   { opacity: 0; transform: scale(0.5); }
+  70%  { transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* ---------- Spin ---------- */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ---------- Wiggle ---------- */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50%       { transform: rotate(3deg); }
+}
+
+/* ---------- Pulse Glow ---------- */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 157, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(255, 107, 157, 0);
+  }
+}
+
+/* ---------- Gradient Shift ---------- */
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---- Applied Utility Classes ---- */
+.anim-float      { animation: float 5s ease-in-out infinite; }
+.anim-bounce     { animation: bounce 1.5s ease-in-out infinite; }
+.anim-wiggle     { animation: wiggle 2s ease-in-out infinite; }
+.anim-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+
+/* Hero profile ring wrapper stops spinning on hover */
+.hero-photo-ring:hover {
+  animation-play-state: paused;
+}
+
+/* Stagger delays for reveal items */
+.stagger-1 { transition-delay: 0.05s !important; }
+.stagger-2 { transition-delay: 0.15s !important; }
+.stagger-3 { transition-delay: 0.25s !important; }
+.stagger-4 { transition-delay: 0.35s !important; }
+.stagger-5 { transition-delay: 0.45s !important; }
+.stagger-6 { transition-delay: 0.55s !important; }

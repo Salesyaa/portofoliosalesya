@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Salesya Al Fatila's portfolio — D-IV Informatics Engineering graduate with experience in administration, document management, and application development." />
+  <meta name="author" content="Salesya Al Fatila" />
+  <meta property="og:title" content="Salesya Al Fatila's Portfolio 🌸" />
+  <meta property="og:description"
+    content="Hello! I'm Salesya — discover my academic journey, internship experience, and projects through this portfolio." />
+  <title>Portofolio - Salesya Al Fatila 🌸</title>
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+  NAVBAR
+============================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="navbar-inner">
+      <a href="#hero" class="nav-logo" aria-label="Go to homepage">
+        Salesya Al Fatila<span></span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#education" id="nav-edu">Education</a></li>
+        <li><a href="#experience" id="nav-exp">Experience</a></li>
+        <li><a href="#projects" id="nav-proj">Projects</a></li>
+        <li><a href="#certificates" id="nav-cert">Certificates</a></li>
+        <li><a href="#contact" id="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+  <section id="hero" aria-label="Home">
+
+    <!-- Background shapes -->
+    <div class="hero-bg-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Particle canvas -->
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+
+      <!-- Photo -->
+      <div class="hero-photo-wrapper" aria-hidden="true">
+        <div class="hero-photo-ring">
+          <img src="assets/img/profile/eca.jpeg" alt="Salesya Al Fatila's profile photo" id="hero-photo"
+            onerror="this.src='https://placehold.co/260x260/FFD6E7/FF6B9D?text=🌸&font=nunito'" />
+        </div>
+        <div class="hero-badge hero-badge-1">✨ Fresh Graduate</div>
+        <div class="hero-badge hero-badge-2">📍 Lhokseumawe</div>
+      </div>
+
+      <!-- Text -->
+      <div class="hero-text">
+        <span class="hero-greeting">Hello, I'm</span>
+        <h1>Ecaa 🌸</h1>
+        <p class="hero-subtitle">
+          I am a&nbsp;
+          <span id="typewriter-text"
+            data-phrases='["D-IV Informatics Engineering Graduate 🎓","Administration &amp; Data Management 📂","Android &amp; Web App Developer 💻","Lifelong Learner 🚀"]'></span>
+        </p>
+        <p class="hero-desc">
+          Fresh graduate in Informatics Engineering with a GPA of 3.88/4.00,
+          graduating with Cum Laude honors. Experienced in administration,
+          document management, application development, and web development.
+          Detail-oriented, responsible, and adaptable to new environments.
+          Open to career opportunities and committed to making meaningful contributions. 🌷
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="btn-portfolio">
+            🎀 My Projects
+          </a>
+          <a href="#contact" class="btn btn-outline" id="btn-contact">
+            💌 Contact Me
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+     ABOUT / BIODATA
+     ============================================================ -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Photo column -->
+        <div class="about-photo-col reveal-left">
+          <div class="about-photo-frame">
+            <img src="assets/img/profile/Pasfoto_salesya.jpg" alt="Salesya Al Fatila"
+              onerror="this.src='https://placehold.co/500x400/FFD6E7/FF6B9D?text=🌸&font=nunito'" />
+          </div>
+          <div class="about-photo-deco" aria-hidden="true"></div>
+          <div class="about-photo-deco-2" aria-hidden="true"></div>
+          <div class="about-tag">
+            <div class="about-tag-icon">🎓</div>
+            <div>
+              <strong>Fresh Graduate</strong>
+              <p>D-IV Informatics Engineering</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text column -->
+        <div class="about-text reveal-right">
+          <span class="tag">✨ About Me</span>
+          <h2 id="about-heading">My Profile</h2>
+
+
+          <!-- Info grid -->
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-icon">👩</span>
+              <div>
+                <span class="info-label">Full Name</span>
+                <span class="info-value">Salesya Al Fatila</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🎂</span>
+              <div>
+                <span class="info-label">Date of Birth</span>
+                <span class="info-value">16 May 2004</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <span class="info-label">Hometown</span>
+                <span class="info-value">Lhokseumawe, Aceh</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🎓</span>
+              <div>
+                <span class="info-label">University</span>
+                <span class="info-value">Politeknik Negeri Lhokseumawe</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📚</span>
+              <div>
+                <span class="info-label">Major</span>
+                <span class="info-value">D-IV Informatics Engineering</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">💼</span>
+              <div>
+                <span class="info-label">Hobbies</span>
+                <span class="info-value">Reading, Watching, and Jogging</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <p class="skills-title">Skills</p>
+
+          <div class="skill-item reveal stagger-1">
+            <div class="skill-header">
+              <span>Administration &amp; Document Management</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item reveal stagger-2">
+            <div class="skill-header">
+              <span>Microsoft Office &amp; Excel</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item reveal stagger-3">
+            <div class="skill-header">
+              <span>Web Development (HTML, CSS, PHP, MySQL)</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item reveal stagger-4">
+            <div class="skill-header">
+              <span>App Development (Flutter &amp; SQLite)</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="75"></div>
+            </div>
+          </div>
+
+        </div><!-- /about-text -->
+      </div><!-- /about-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+     EDUCATION SECTION
+     ============================================================ -->
+  <section id="education" class="section" aria-labelledby="edu-heading">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2 id="edu-heading">Education History 🎓</h2>
+        <p>My academic journey from the beginning to the present</p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Item 1 — SD -->
+        <div class="timeline-item reveal-left stagger-1">
+          <div class="timeline-dot" aria-hidden="true">🏫</div>
+          <div class="timeline-card">
+            <span class="timeline-year">2010 – 2016</span>
+            <h3>SD Negeri 20 Banda Sakti</h3>
+            <p class="institution">Lhokseumawe, Aceh</p>
+            <p>Completed elementary education with Achieved top academic rankings and actively participated in various
+              extracurricular activities.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 — SMP -->
+        <div class="timeline-item reveal-right stagger-2">
+          <div class="timeline-dot" aria-hidden="true">📖</div>
+          <div class="timeline-card">
+            <span class="timeline-year">2016 – 2019</span>
+            <h3>SMP Negeri 5 Lhokseumawe</h3>
+            <p class="institution">Lhokseumawe, Aceh</p>
+            <p>Maintained good academic performance throughout junior high school and developed a strong foundation in
+              various subjects</p>
+          </div>
+        </div>
+
+        <!-- Item 3 — SMA -->
+        <div class="timeline-item reveal-left stagger-3">
+          <div class="timeline-dot" aria-hidden="true">🏆</div>
+          <div class="timeline-card">
+            <span class="timeline-year">2019 – 2022</span>
+            <h3>SMA Negeri 1 Lhokseumawe</h3>
+            <p class="institution">Lhokseumawe, Aceh</p>
+            <p>Maintained good academic performance and participated in extracurricular activities to develop personal
+              interests and skills.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 — Universitas -->
+        <div class="timeline-item reveal-right stagger-4">
+          <div class="timeline-dot" aria-hidden="true">🎓</div>
+          <div class="timeline-card">
+            <span class="timeline-year">2022 – 2026</span>
+            <h3>Politeknik Negeri Lhokseumawe</h3>
+            <p class="institution">D-IV Informatics Engineering — Lhokseumawe</p>
+            <p>Graduated with Cum Laude honors. Studied programming fundamentals, application development, database
+              management, and information system design and development.</p>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+     EXPERIENCE SECTION
+     ============================================================ -->
+  <section id="experience" class="section" aria-labelledby="exp-heading">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2 id="exp-heading">Experience 💼</h2>
+        <p>Internship and organizational activities that have shaped who I am</p>
+      </div>
+
+      <div class="experience-grid">
+
+        <!-- ── Pengalaman 1 — PLN ── -->
+        <div class="exp-card reveal stagger-1">
+
+          <!-- Carousel foto dokumentasi -->
+          <div class="exp-carousel" aria-label="PLN internship documentation photos">
+            <div class="carousel-track">
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/pln/fotbar.jpeg" alt="PLN internship — photo 1"
+                  onerror="this.src='https://placehold.co/600x360/FFB3C6/FFFFFF?text=📸+PLN+Internship&font=nunito'" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/pln/veriflunas_SIPAT.jpg" alt="PLN internship — photo 1"
+                  onerror="this.src='https://placehold.co/600x360/FFB3C6/FFFFFF?text=📸+PLN+Internship&font=nunito'" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/pln/invoice.jpeg" alt="PLN internship — photo 2"
+                  onerror="this.src='https://placehold.co/600x360/C9B8FF/FFFFFF?text=📸+PLN+Internship&font=nunito'" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/pln/apk_inven.jpg" alt="PLN internship — photo 3"
+                  onerror="this.src='https://placehold.co/600x360/FF8FAB/FFFFFF?text=📸+PLN+Internship&font=nunito'" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/pln/instalasi.jpg" alt="PLN internship — photo 4"
+                  onerror="this.src='https://placehold.co/600x360/FF8FAB/FFFFFF?text=📸+PLN+Internship&font=nunito'" />
+              </div>
+
+            </div><!-- /carousel-track -->
+
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots" aria-hidden="true"></div>
+          </div><!-- /exp-carousel -->
+
+          <!-- Info -->
+          <div class="exp-info">
+            <span class="exp-period">📅 August 4, 2025 – January 4, 2026</span>
+            <h3>PT PLN (Persero) UP3 Lhokseumawe</h3>
+            <p class="exp-role">💻 Junior Developer Intern — Finance &amp; General Administration</p>
+            <p class="exp-desc">
+              Supported administrative and finance operations, including document management,
+              invoice inspection, and verification of payment settlements. Developed an
+              Android-based office inventory application using Flutter and SQLite to support
+              inventory and asset data management. Also developed a web-based internship
+              certificate system and assisted with software installation and setup on employee
+              laptops.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Administration</span>
+              <span class="tag">Document Management</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">SQLite</span>
+            </div>
+          </div>
+
+        </div><!-- /exp-card 1 -->
+        <!-- ── Pengalaman 2 — KOMIT ── -->
+        <div class="exp-card reveal stagger-2">
+
+          <div class="exp-carousel" aria-label="KOMIT documentation photos">
+            <div class="carousel-track">
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/komit/fotbar.jpeg" alt="KOMIT — photo 1"
+                  onerror="this.src='https://placehold.co/600x360/C9B8FF/FFFFFF?text=📸+KOMIT&font=nunito'" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/komit/rapat.jpeg" alt="KOMIT — photo 2"
+                  onerror="this.src='https://placehold.co/600x360/FFD6E7/FF6B9D?text=📸+KOMIT&font=nunito'" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/komit/raker.jpeg" alt="KOMIT — photo 2"
+                  onerror="this.src='https://placehold.co/600x360/FFD6E7/FF6B9D?text=📸+KOMIT&font=nunito'" />
+              </div>
+
+            </div><!-- /carousel-track -->
+
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots" aria-hidden="true"></div>
+          </div>
+
+          <div class="exp-info">
+            <span class="exp-period">📅 2024 – 2025</span>
+            <h3>Komunitas IT (KOMIT)</h3>
+            <p class="exp-role">🗂️ Secretary</p>
+            <p class="exp-desc">
+              Participated in IT learning activities while serving as Secretary General,
+              responsible for managing community data, coordinating and organizing meetings,
+              and facilitating information flow between members and the community board.
+              Contributed to effective communication, organized administration, and smooth
+              coordination of community activities.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Teamwork</span>
+              <span class="tag">Data Management</span>
+              <span class="tag">Meeting Coordination</span>
+            </div>
+          </div>
+
+        </div><!-- /exp-card 2 -->
+
+        <!-- ── Pengalaman 3 — UKM IECLOP ── -->
+        <div class="exp-card reveal stagger-2">
+
+          <div class="exp-carousel" aria-label="UKM IECLOP documentation photos">
+            <div class="carousel-track">
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/ieclop/ieschool1.jpeg" alt="UKM IECLOP — photo 1"
+                  onerror="this.src='https://placehold.co/600x360/C9B8FF/FFFFFF?text=📸+UKM+IECLOP&font=nunito'" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/ieclop/ieschool2.jpeg" alt="UKM IECLOP — photo 2"
+                  onerror="this.src='https://placehold.co/600x360/FFD6E7/FF6B9D?text=📸+UKM+IECLOP&font=nunito'" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/ieclop/icharity.jpeg" alt="UKM IECLOP — photo 2"
+                  onerror="this.src='https://placehold.co/600x360/FFD6E7/FF6B9D?text=📸+UKM+IECLOP&font=nunito'" />
+              </div>
+
+              <div class="carousel-slide">
+                <img src="assets/img/experience/ieclop/hoco.jpeg" alt="UKM IECLOP — photo 2"
+                  onerror="this.src='https://placehold.co/600x360/FFD6E7/FF6B9D?text=📸+UKM+IECLOP&font=nunito'" />
+              </div>
+
+            </div><!-- /carousel-track -->
+
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots" aria-hidden="true"></div>
+          </div>
+
+          <div class="exp-info">
+            <span class="exp-period">📅 2024 – 2025</span>
+            <h3>UKM IECLOP PNL</h3>
+            <p class="exp-role">🌐 Public Relations Division Member</p>
+            <p class="exp-desc">
+              Participated in organizational activities while developing English language
+              skills, communication, and interpersonal abilities. Contributed to initiatives
+              that strengthened connections between internal and external stakeholders,
+              including alumni engagement. Also participated in Ramadan charity activities
+              for orphanage children and initiatives to promote English language learning
+              in remote schools.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Teamwork</span>
+              <span class="tag">Public Relations</span>
+              <span class="tag">Community Engagement</span>
+            </div>
+          </div>
+
+        </div><!-- /exp-card 3 -->
+
+
+
+      </div><!-- /experience-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+     PROJECTS SECTION
+     ============================================================ -->
+  <section id="projects" class="section" aria-labelledby="proj-heading">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2 id="proj-heading">Projects 🚀</h2>
+        <p>Applications and systems I have built and developed</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ── Project 1 — ESSCORE ── -->
+        <div class="project-card reveal stagger-1">
+
+          <div class="project-media" id="proj-media-1">
+            <!-- Drop your video at assets/video/projects/esscore_demo.mp4 -->
+            <!-- Drop your thumbnail at assets/img/projects/esscore_thumb.jpg -->
+            <video class="project-video" src="assets/img/projects/esscore.mp4"
+              poster="assets/img/projects/thumbs_esscore.png" muted loop playsinline
+              aria-label="ESSCORE demo video"></video>
+            <img class="project-img-fallback" src="assets/img/projects/esscore_thumb.jpg"
+              alt="ESSCORE project screenshot"
+              onerror="this.src='https://placehold.co/700x400/FFD6E7/FF6B9D?text=🚀+ESSCORE&font=nunito'" />
+            <div class="project-media-overlay">
+              <button class="project-play-btn" aria-label="Play / pause demo" data-target="proj-media-1">
+                <span class="play-icon">▶</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-header">
+              <span class="project-type">🌐 Web Application</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3>ESSCORE</h3>
+            <p class="project-subtitle">Web-Based English Essay Scoring System</p>
+            <p class="project-desc">
+              Developed a web-based English essay scoring system to assist in assignment management, essay submission,
+              and student grading. Integrated with a Flask API implementing TF-IDF and Support Vector Regression (SVR)
+              to automatically generate essay score predictions.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge tech-php">PHP</span>
+              <span class="tech-badge tech-html">HTML</span>
+              <span class="tech-badge tech-css-b">CSS</span>
+              <span class="tech-badge tech-mysql">MySQL</span>
+              <span class="tech-badge tech-flask">Flask</span>
+              <span class="tech-badge tech-ml">TF-IDF · SVR</span>
+            </div>
+          </div>
+
+        </div><!-- /project-card 1 -->
+
+        <!-- ── Project 2 — Inventory App ── -->
+        <div class="project-card reveal stagger-2">
+
+          <div class="project-media" id="proj-media-2">
+            <!-- Drop your video at assets/video/projects/inventory_demo.mp4 -->
+            <!-- Drop your thumbnail at assets/img/projects/inventory_thumb.jpg -->
+            <video class="project-video" src="assets/img/projects/inventori.mp4"
+              poster="assets/img/projects/thumbs_invent.jpeg" muted loop playsinline
+              aria-label="Office Inventory App demo video"></video>
+            <img class="project-img-fallback" src="assets/img/projects/inventory_thumb.jpg"
+              alt="Office Inventory App screenshot"
+              onerror="this.src='https://placehold.co/700x400/EDE7FF/9B8AFB?text=📱+Inventory+App&font=nunito'" />
+            <div class="project-media-overlay">
+              <button class="project-play-btn" aria-label="Play / pause demo" data-target="proj-media-2">
+                <span class="play-icon">▶</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-header">
+              <span class="project-type">📱 Android Application</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Office Inventory App</h3>
+            <p class="project-subtitle">Android-Based Inventory Management System</p>
+            <p class="project-desc">
+              Developed an Android-based office furniture and equipment inventory
+              application using Flutter and SQLite as part of an internship at
+              PT PLN (Persero) UP3 Lhokseumawe. The application was designed to support
+              structured recording and management of office furniture and equipment data.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge tech-flutter">Flutter</span>
+              <span class="tech-badge tech-sqlite">SQLite</span>
+              <span class="tech-badge tech-android">Android</span>
+            </div>
+          </div>
+
+        </div><!-- /project-card 2 -->
+
+        <!-- ── Project 3 — Smartkid ── -->
+        <div class="project-card reveal stagger-3">
+
+          <div class="project-media" id="proj-media-3">
+            <!-- Drop your video at assets/video/projects/smartkid.mp4 -->
+            <!-- Drop your thumbnail at assets/img/projects/smartkid_thumb.jpg -->
+            <video class="project-video" src="assets/img/projects/smartkid.mp4"
+              poster="assets/img/projects/thumbs_smartkid.png" muted loop playsinline
+              aria-label="SMARTKID demo video"></video>
+            <img class="project-img-fallback" src="assets/img/projects/thumbs_smartkid.png"
+              alt="SMARTKID project screenshot"
+              onerror="this.src='https://placehold.co/700x400/EDE7FF/9B8AFB?text=🚀+SmartKid&font=nunito'" />
+            <div class="project-media-overlay">
+              <button class="project-play-btn" aria-label="Play / pause demo" data-target="proj-media-3">
+                <span class="play-icon">▶</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-header">
+              <span class="project-type">🌐 Web Application</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3>SMARTKID</h3>
+            <p class="project-subtitle">Web-Based E-Learning for Kids</p>
+            <p class="project-desc">
+              Developed a web-based e-learning platform designed to facilitate
+              collaboration between teachers and parents in monitoring children's
+              learning activities. The platform allows parents to track homework
+              assignments and view activity albums uploaded by teachers, providing
+              insights into children's learning progress and daily activities.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge tech-php">PHP</span>
+              <span class="tech-badge tech-html">HTML</span>
+              <span class="tech-badge tech-css-b">CSS</span>
+              <span class="tech-badge tech-mysql">MySQL</span>
+            </div>
+          </div>
+
+        </div><!-- /project-card 4 -->
+
+        <!-- ── Project 4 — DeCafe ── -->
+        <div class="project-card reveal stagger-4">
+
+          <div class="project-media" id="proj-media-4">
+            <!-- Drop your video at assets/video/projects/decafe_demo.mp4 -->
+            <!-- Drop your thumbnail at assets/img/projects/decafe_thumb.jpg -->
+            <video class="project-video" src="assets/img/projects/decafe.mp4"
+              poster="assets/img/projects/thumbs_decafe.png" muted loop playsinline
+              aria-label="DeCafe demo video"></video>
+            <img class="project-img-fallback" src="assets/img/projects/thumbs_decafe.png"
+              alt="DeCafe project screenshot"
+              onerror="this.src='https://placehold.co/700x400/FFD6E7/FF6B9D?text=🚀+DeCafe&font=nunito'" />
+            <div class="project-media-overlay">
+              <button class="project-play-btn" aria-label="Play / pause demo" data-target="proj-media-4">
+                <span class="play-icon">▶</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-header">
+              <span class="project-type">🌐 Web Application</span>
+              <span class="project-year">2025 – 2026</span>
+            </div>
+            <h3>DeCafe</h3>
+            <p class="project-subtitle">Web-Based Cafe Ordering and Management System</p>
+            <p class="project-desc">
+              Developed a web-based cafe management system that streamlines
+              food and beverage ordering, payment processing, and kitchen
+              order monitoring. The system helps manage incoming orders and
+              track their status throughout the preparation process, supporting
+              more organized and efficient cafe operations.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge tech-php">PHP</span>
+              <span class="tech-badge tech-html">HTML</span>
+              <span class="tech-badge tech-css-b">CSS</span>
+              <span class="tech-badge tech-mysql">MySQL</span>
+            </div>
+          </div>
+
+        </div><!-- /project-card 4 -->
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+     CERTIFICATES SECTION
+     ============================================================ -->
+  <section id="certificates" class="section" aria-labelledby="cert-heading">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2 id="cert-heading">Certificates &amp; Awards 🏆</h2>
+        <p>Documentation of achievements and certifications I have earned</p>
+      </div>
+
+      <div class="cert-grid">
+
+        <div class="cert-card reveal stagger-1" id="cert-1" role="button" tabindex="0"
+          aria-label="View certificate: PLN Internship Certificate" data-img="assets/img/certificates/intern_pln.jpeg"
+          data-title="PLN Internship Certificate"
+          data-sub="Completed an internship at PT PLN (Persero) UP3 Lhokseumawe, gaining experience in administrative tasks, financial document management, and office inventory application development.">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificates/intern_pln.jpeg" alt="PLN Internship Certificate"
+              onerror="this.src='https://placehold.co/400x280/FFD6E7/FF6B9D?text=🏆+PLN+Internship&font=nunito'" />
+            <div class="cert-overlay"><span>🔍 View Details</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>PLN Internship Certificate</h4>
+            <p>PT PLN (Persero) UP3 Lhokseumawe · 2026</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal stagger-3" id="cert-3" role="button" tabindex="0"
+          aria-label="View certificate: Basic Excel Certificate" data-img="assets/img/certificates/basic_excel.png"
+          data-title="Basic Excel Certificate" data-sub="Learned the basics of Microsoft Excel, including data entry, cell formatting, basic formulas, and
+              spreadsheet management.">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificates/basic_excel.png" alt="Basic Excel Certificate"
+              onerror="this.src='https://placehold.co/400x280/FFB3C6/FF4785?text=🏆+Basic+Excel&font=nunito'" />
+            <div class="cert-overlay"><span>🔍 View Details</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>Basic Excel Certificate</h4>
+            <p>Microsoft Excel Fundamentals by Bisa.AI · 2026</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal stagger-2" id="cert-6" role="button" tabindex="0"
+          aria-label="View certificate: Soft Skill Certificate" data-img="assets/img/certificates/softskill.jpg"
+          data-title="Soft Skill Certificate" data-sub="Participated in soft skills training covering character building, job interview preparation, CV writing
+              and administration, and psychological test preparation.">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificates/softskill.jpg" alt="Soft Skill Certificate"
+              onerror="this.src='https://placehold.co/400x280/FFD6E7/FF6B9D?text=🏆+Soft+Skill&font=nunito'" />
+            <div class="cert-overlay"><span>🔍 View Details</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>Soft Skill Certificate</h4>
+            <p>Soft Skills Training & Career Preparation · 2026</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal stagger-2" id="cert-2" role="button" tabindex="0"
+          aria-label="View certificate: IECLOP Organization Certificate" data-img="assets/img/certificates/ieclop.jpeg"
+          data-title="IECLOP Organization Certificate" data-sub="Actively participated in UKM IECLOP, developing teamwork, communication, leadership, and organizational
+              skills through various activities and collaborative experiences.">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificates/ieclop.jpeg" alt="IECLOP Organization Certificate"
+              onerror="this.src='https://placehold.co/400x280/EDE7FF/9B8AFB?text=🏆+IECLOP+Org&font=nunito'" />
+            <div class="cert-overlay"><span>🔍 View Details</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>IECLOP Organization Certificate</h4>
+            <p>UKM IECLOP PNL · 2025</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal stagger-4" id="cert-4" role="button" tabindex="0"
+          aria-label="View certificate: HTML Certificate" data-img="assets/img/certificates/html.png"
+          data-title="HTML Certificate"
+          data-sub="Learned the fundamentals of HTML, including webpage structure, elements, tags, and links.">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificates/html.png" alt="HTML Certificate"
+              onerror="this.src='https://placehold.co/400x280/FF8FAB/FFFFFF?text=HTML+Certificate&font=nunito'" />
+            <div class="cert-overlay"><span>🔍 View Details</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>HTML Certificate</h4>
+            <p>HTML Learning · 2023</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal stagger-1" id="cert-5" role="button" tabindex="0"
+          aria-label="View certificate: CSS Certificate" data-img="assets/img/certificates/css.png"
+          data-title="CSS Certificate" data-sub="Learned the fundamentals of CSS, including styling web pages, colors, typography, layouts, and element
+              positioning.">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificates/css.png" alt="CSS Certificate"
+              onerror="this.src='https://placehold.co/400x280/C9B8FF/FFFFFF?text=🏆+CSS+Cert&font=nunito'" />
+            <div class="cert-overlay"><span>🔍 View Details</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>CSS Certificate</h4>
+            <p>Cascading Style Sheets Learning · 2023</p>
+          </div>
+        </div>
+
+
+
+        <div class="cert-card reveal stagger-1" id="cert-9" role="button" tabindex="0"
+          aria-label="View certificate: First Place UTBK TPA Soshum Online Tryout"
+          data-img="assets/img/certificates/teknos_aceh.jpeg" data-title="First Place – UTBK TPA Soshum Online Tryout"
+          data-sub="Achieved 1st place in the Social Sciences (Soshum) category of the UTBK TPA online tryout organized by
+              Teknos Aceh at the city level in Lhokseumawe.">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificates/teknos_aceh.jpeg" alt="First Place UTBK TPA Soshum Online Tryout"
+              onerror="this.src='https://placehold.co/400x280/FF8FAB/FFFFFF?text=First+Place+Award&font=nunito'" />
+            <div class="cert-overlay"><span>🔍 View Details</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>First Place – UTBK TPA Soshum Online Tryout</h4>
+            <p>Teknos Aceh · Lhokseumawe City · 2022</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal stagger-3" id="cert-7" role="button" tabindex="0"
+          aria-label="View certificate: Literacy Performance Competition Committee"
+          data-img="assets/img/certificates/literasi.jpg" data-title="Literacy Performance Competition Committee"
+          data-sub="Served as a committee member for the Citywide Literacy Performance Competition in Lhokseumawe,
+              contributing to the organization and coordination of the event.">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificates/literasi.jpg" alt="Literacy Performance Competition Committee Certificate"
+              onerror="this.src='https://placehold.co/400x280/EDE7FF/9B8AFB?text=Literacy+Committee&font=nunito'" />
+            <div class="cert-overlay"><span>🔍 View Details</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>Literacy Performance Competition Committee</h4>
+            <p>Lhokseumawe City · 2021</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal stagger-4" id="cert-8" role="button" tabindex="0"
+          aria-label="View certificate: First Place in Syarhil Quran" data-img="assets/img/certificates/syahrhil.jpeg"
+          data-title="First Place – Syarhil Quran" data-sub="Achieved 1st place in the Syarhil Quran category at the village-level Musabaqah Tilawatil Quran (MTQ)
+              competition.">
+          <div class="cert-img-wrap">
+            <img src="assets/img/certificates/syahrhil.jpeg" alt="First Place in Syarhil Quran"
+              onerror="this.src='https://placehold.co/400x280/FFB3C6/FF4785?text=First+Place+Award&font=nunito'" />
+            <div class="cert-overlay"><span>🔍 View Details</span></div>
+          </div>
+          <div class="cert-info">
+            <h4>First Place – Syarhil Quran</h4>
+            <p>Village-Level MTQ · 2016</p>
+          </div>
+        </div>
+
+      </div><!-- /cert-grid -->
+    </div>
+
+    <!-- Certificate Modal / Lightbox -->
+    <div class="cert-modal" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+      <div class="cert-modal-backdrop" id="cert-modal-backdrop"></div>
+      <div class="cert-modal-content">
+        <button class="cert-modal-close" id="cert-modal-close" aria-label="Close">✕</button>
+        <img id="cert-modal-img" src="" alt="" />
+        <div class="cert-modal-info">
+          <h3 id="cert-modal-title"></h3>
+          <p id="cert-modal-sub"></p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+     CONTACT SECTION
+     ============================================================ -->
+  <section id="contact" class="section" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2 id="contact-heading">Contact Me 📬</h2>
+        <p>Have a question or want to collaborate? Don't hesitate to reach out!</p>
+      </div>
+
+      <di class="contact-layout">
+
+        <!-- Form -->
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal-left">
+          <h3>Send a Message 💌</h3>
+          <p>Fill in the form below, I'll reply as soon as possible~</p>
+
+
+          <form id="contact-form" action="https://formspree.io/f/xeaaajow" method="POST">
+
+            <div class="form-group">
+              <label for="cf-name">Full Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="What's your name? 🌸" autocomplete="name"
+                required />
+            </div>
+
+            <div class="form-group">
+              <label for="cf-email">Email Address</label>
+              <input type="email" id="cf-email" name="email" placeholder="your@email.com" autocomplete="email"
+                required />
+            </div>
+
+            <div class="form-group">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" placeholder="Write your message here... 💬" required></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="New Message from Portfolio" />
+
+            <button type="submit" class="btn btn-primary" id="btn-send-msg"
+              style="width: 100%; justify-content: center;">
+              💌 Send Message
+            </button>
+
+          </form>
+
+          </form>
+        </div>
+
+
+        <!-- Contact Links & QR -->
+        <div class="contact-info-wrap reveal-right">
+          <h3>Find Me 🌐</h3>
+          <p>Or reach out directly through the following platforms:</p>
+
+          <div class="contact-links">
+
+
+            <!-- Email 
+            <a href="mailto:salesyaalfatila7@gmail.com" class="contact-link-item link-email" id="link-email"
+              aria-label="Send an email to Salesya">
+              <div class="contact-link-icon">📧</div>
+              <div class="contact-link-text">
+                <strong>Email</strong>
+                <span>salesyaalfatila7@gmail.com</span>
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a> -->
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/salesyaa_/" target="_blank" rel="noopener noreferrer"
+              class="contact-link-item link-ig" id="link-instagram" aria-label="Visit Salesya's Instagram">
+              <div class="contact-link-icon">📷</div>
+              <div class="contact-link-text">
+                <strong>Instagram</strong>
+                <!---- <span>@salesyaa_</span> -->
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+
+            <!-- LinkedIn: replace with your profile URL -->
+            <a href="https://www.linkedin.com/in/salesya-al-fatila-b124652b1/" target="_blank" rel="noopener noreferrer"
+              class="contact-link-item link-linkedin" id="link-linkedin" aria-label="Visit Salesya's LinkedIn">
+              <div class="contact-link-icon">💼</div>
+              <div class="contact-link-text">
+                <strong>LinkedIn</strong>
+                <!---- <span>Salesya Al Fatila</span> -->
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+            <!-- /contact-links -->
+
+
+          </div><!-- /contact-info-wrap -->
+        </div><!-- /contact-layout -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-logo">Salesya Al Fatila<span
+          style="color:rgba(255,255,255,0.7);font-size:0.9rem;margin-left:3px;">✨</span></div>
+      <p class="footer-text">
+        Made with <span class="footer-heart">💖</span> and a passion for learning
+      </p>
+      <p class="footer-text" style="font-size:0.8rem; margin-top: -6px;">
+        &copy; <span id="footer-year"></span> Salesya Al Fatila. All rights reserved 🌸
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Back to top">▲</button>
+
+  <!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+  <script src="js/particles.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    // Footer year
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    // Keyboard support for cert cards (Enter/Space to open modal)
+    document.querySelectorAll('.cert-card').forEach(card => {
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          card.click();
+        }
+      });
+    });
+
+    // ── Project video play/pause toggle ──────────────────────────────
+    document.querySelectorAll('.project-play-btn').forEach(btn => {
+      const wrapper = btn.closest('.project-media');
+      const video = wrapper.querySelector('.project-video');
+      const imgFall = wrapper.querySelector('.project-img-fallback');
+      const icon = btn.querySelector('.play-icon');
+
+      // Show image fallback when video can't load, hide video & overlay btn
+      video.addEventListener('error', () => {
+        video.style.display = 'none';
+        imgFall.style.display = 'block';
+        btn.style.display = 'none';
+      });
+
+      // If video loaded (has data), hide static image
+      video.addEventListener('loadeddata', () => {
+        imgFall.style.display = 'none';
+      });
+
+      btn.addEventListener('click', () => {
+        if (video.paused) {
+          video.play();
+          icon.textContent = '⏸';
+          wrapper.classList.add('playing');
+        } else {
+          video.pause();
+          icon.textContent = '▶';
+          wrapper.classList.remove('playing');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
